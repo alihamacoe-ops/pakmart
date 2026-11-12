@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="پاکستان کی آن لائن شاپ — موبائل، ای بائیکس، سولر پینلز اور مزید مصنوعات۔">
+  <title>PakMart | پاکستان کی آن لائن شاپ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar">پاکستان بھر میں منتخب مصنوعات کی آن لائن خریداری</div>
+
+  <header class="header">
+    <a class="logo" href="#">Pak<span>Mart</span></a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="موبائل، سولر پینل، ای بائیک تلاش کریں..." aria-label="مصنوعات تلاش کریں">
+      <button type="submit">تلاش</button>
+    </form>
+    <button class="cart-button" id="cartButton" type="button">🛒 ٹوکری <span id="cartCount">0</span></button>
+  </header>
+
+  <nav class="nav">
+    <a href="#home">ہوم</a>
+    <a href="#products" data-category="موبائل">موبائل</a>
+    <a href="#products" data-category="ای بائیکس">ای بائیکس</a>
+    <a href="#products" data-category="سولر">سولر</a>
+    <a href="#products" data-category="الیکٹرانکس">الیکٹرانکس</a>
+    <a href="#products" data-category="دیگر">دیگر مصنوعات</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">خوش آمدید — PakMart</p>
+        <h1>پاکستان کی جدید آن لائن مارکیٹ</h1>
+        <p>موبائل فونز، الیکٹرک بائیکس، سولر سلوشنز اور روزمرہ کی پسندیدہ مصنوعات ایک ہی جگہ تلاش کریں۔</p>
+        <a class="primary-link" href="#products">مصنوعات دیکھیں</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-circle">🇵🇰</div>
+        <div class="art-card">آن لائن خریداری<br><strong>آسان اور تیز</strong></div>
+      </div>
+    </section>
+
+    <section class="categories section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">اپنی پسند کا انتخاب کریں</p><h2>مصنوعات کی اقسام</h2></div>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="موبائل"><span>📱</span><b>موبائل فونز</b></button>
+        <button class="category-card" data-category="ای بائیکس"><span>🛵</span><b>ای بائیکس</b></button>
+        <button class="category-card" data-category="سولر"><span>☀️</span><b>سولر پینلز</b></button>
+        <button class="category-card" data-category="الیکٹرانکس"><span>🖥️</span><b>اسکرینز و الیکٹرانکس</b></button>
+        <button class="category-card" data-category="دیگر"><span>🎧</span><b>دیگر مصنوعات</b></button>
+      </div>
+    </section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading products-heading">
+        <div><p class="eyebrow">آپ کے لیے منتخب</p><h2>نمایاں مصنوعات</h2></div>
+        <button class="clear-filter" id="clearFilter" type="button">تمام مصنوعات دکھائیں</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-name="اسمارٹ فون موبائل" data-category="موبائل">
+          <div class="product-image phone">📱<span class="tag">مقبول</span></div>
+          <div class="product-info"><small>موبائل فونز</small><h3>اسمارٹ فون</h3><p class="price">₨ 45,000</p><button class="add-button" data-product="اسمارٹ فون" data-price="45000">ٹوکری میں شامل کریں</button></div>
+        </article>
+        <article class="product-card" data-name="الیکٹرک ای بائیک" data-category="ای بائیکس">
+          <div class="product-image bike">🛵<span class="tag">نئی آمد</span></div>
+          <div class="product-info"><small>ای بائیکس</small><h3>الیکٹرک ای بائیک</h3><p class="price">₨ 185,000</p><button class="add-button" data-product="الیکٹرک ای بائیک" data-price="185000">ٹوکری میں شامل کریں</button></div>
+        </article>
+        <article class="product-card" data-name="سولر پینل" data-category="سولر">
+          <div class="product-image solar">☀️</div>
+          <div class="product-info"><small>سولر</small><h3>سولر پینل</h3><p class="price">₨ 22,000</p><button class="add-button" data-product="سولر پینل" data-price="22000">ٹوکری میں شامل کریں</button></div>
+        </article>
+        <article class="product-card" data-name="ایل ای ڈی اسکرین مانیٹر" data-category="الیکٹرانکس">
+          <div class="product-image screen">🖥️</div>
+          <div class="product-info"><small>الیکٹرانکس</small><h3>ایل ای ڈی مانیٹر</h3><p class="price">₨ 32,000</p><button class="add-button" data-product="ایل ای ڈی مانیٹر" data-price="32000">ٹوکری میں شامل کریں</button></div>
+        </article>
+        <article class="product-card" data-name="وائرلیس ہیڈفون" data-category="دیگر">
+          <div class="product-image audio">🎧</div>
+          <div class="product-info"><small>دیگر مصنوعات</small><h3>وائرلیس ہیڈفون</h3><p class="price">₨ 6,500</p><button class="add-button" data-product="وائرلیس ہیڈفون" data-price="6500">ٹوکری میں شامل کریں</button></div>
+        </article>
+        <article class="product-card" data-name="اسمارٹ واچ" data-category="دیگر">
+          <div class="product-image watch">⌚</div>
+          <div class="product-info"><small>دیگر مصنوعات</small><h3>اسمارٹ واچ</h3><p class="price">₨ 8,000</p><button class="add-button" data-product="اسمارٹ واچ" data-price="8000">ٹوکری میں شامل کریں</button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>اس تلاش یا قسم میں کوئی مصنوعات نہیں ملیں۔</p>
+    </section>
+
+    <section class="trust-strip">
+      <div>🚚 <b>پاکستان بھر میں ڈیلیوری</b><small>ڈیلیوری کی تفصیل فروخت کنندہ سے معلوم کریں</small></div>
+      <div>🔒 <b>محفوظ خریداری</b><small>آرڈر دینے سے پہلے تفصیلات کی تصدیق کریں</small></div>
+      <div>💬 <b>مدد اور رہنمائی</b><small>ہم سے رابطے کا طریقہ جلد شامل کریں</small></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#">Pak<span>Mart</span></a>
+    <p>پاکستان کی آن لائن مارکیٹ — اپنی پسند کی مصنوعات ایک جگہ تلاش کریں۔</p>
+    <small>© 2026 PakMart۔ تمام حقوق محفوظ ہیں۔</small>
+    <small class="demo-note">نوٹ: یہ نمونہ ویب سائٹ ہے۔ قیمتیں صرف مثال کے لیے ہیں؛ حقیقی اسٹاک، ادائیگی اور آرڈر سسٹم ابھی منسلک نہیں۔</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const cards = [...document.querySelectorAll('.product-card')];
+    const emptyState = document.getElementById('emptyState');
+    const cartCount = document.getElementById('cartCount');
+    const toast = document.getElementById('toast');
+    let cartItems = 0;
+    let activeCategory = '';
+
+    function filterProducts() {
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      let visible = 0;
+      cards.forEach(card => {
+        const matchesText = card.dataset.name.toLocaleLowerCase().includes(query);
+        const matchesCategory = !activeCategory || card.dataset.category === activeCategory;
+        card.hidden = !(matchesText && matchesCategory);
+        if (!card.hidden) visible++;
+      });
+      emptyState.hidden = visible !== 0;
+    }
+
+    document.getElementById('searchForm').addEventListener('submit', e => {
+      e.preventDefault();
+      activeCategory = '';
+      filterProducts();
+      document.getElementById('products').scrollIntoView({behavior:'smooth'});
+    });
+    searchInput.addEventListener('input', filterProducts);
+
+    document.querySelectorAll('[data-category]').forEach(button => {
+      button.addEventListener('click', () => {
+        activeCategory = button.dataset.category;
+        searchInput.value = '';
+        filterProducts();
+        document.getElementById('products').scrollIntoView({behavior:'smooth'});
+      });
+    });
+
+    document.getElementById('clearFilter').addEventListener('click', () => {
+      activeCategory = '';
+      searchInput.value = '';
+      filterProducts();
+    });
+
+    document.querySelectorAll('.add-button').forEach(button => {
+      button.addEventListener('click', () => {
+        cartItems++;
+        cartCount.textContent = cartItems;
+        toast.textContent = button.dataset.product + ' ٹوکری میں شامل کر دیا گیا۔';
+        toast.classList.add('show');
+        window.setTimeout(() => toast.classList.remove('show'), 2200);
+      });
+    });
+
+    document.getElementById('cartButton').addEventListener('click', () => {
+      toast.textContent = cartItems ? 'آپ کی ٹوکری میں ' + cartItems + ' آئٹم ہیں۔' : 'آپ کی ٹوکری ابھی خالی ہے۔';
+      toast.classList.add('show');
+      window.setTimeout(() => toast.classList.remove('show'), 2200);
+    });
+  </script>
+</body>
+</html>
